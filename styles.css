@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.placeholder {
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.placeholder h1 {
+  margin-bottom: 50px;
+  font-size: 24px;
+  color: #007BFF;
+  text-align: left; 
+}
+
+.placeholder p {
+  margin: 15px 0 5px 0; 
+  font-size: 18px;
+  color: #555;
+  text-align: left; 
+}
+
+.placeholder input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.placeholder input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.placeholder button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #007BFF; 
+  background-color: white; 
+  border: 2px solid #007BFF; 
+  border-radius: 50px;
+  cursor: pointer;
+  float: right; 
+  margin-top: 10px;
+}
+
+.placeholder button:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.tooltip-message {
+  display: none;
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.placeholder:hover #submitButton:disabled + #tooltipMessage {
+  display: block;
+}
